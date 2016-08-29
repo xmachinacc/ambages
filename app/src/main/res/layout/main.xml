@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="applogic.MazeSolvingActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <ImageView
+        android:contentDescription="@string/description"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView1"
+        android:layout_gravity="start|top"
+        android:layout_above="@+id/btnIntend"
+        android:layout_below="@+id/seekBar" />
+
+    <Button
+        android:id="@+id/btnIntend"
+        style="?metaButtonBarButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/camera"
+        android:layout_alignParentBottom="true"
+        android:textSize="20sp"
+        android:background="@color/colorAccent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/colorPrimary" />
+
+    <Button
+        style="?metaButtonBarButtonStyle"
+        android:id="@+id/solve"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/solve"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorPrimary" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:progress="65"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/colorPrimary" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/resolution"
+        android:id="@+id/textView"
+        android:textColor="@color/colorAccent"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorPrimary"
+        android:layout_alignTop="@+id/imageView1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/solve_message"
+        android:id="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/solve"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp" />
+
+</RelativeLayout>

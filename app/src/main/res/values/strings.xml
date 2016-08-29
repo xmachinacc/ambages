@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Ambages1.0</string>
+
+    <string name="camera">Camera</string>
+    <string name="solve">Solve</string>
+    <string name="cannot">Cannot</string>
+    <string name="album_name">CameraSample</string>
+    <string name="resolution">Resolution</string>
+    <string name="solve_message">Take a picture and touch the image to set a start and end point before solving.</string>
+    <string name="description">Supposed maze image</string>
+
+</resources>
